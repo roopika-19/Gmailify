@@ -17,7 +17,7 @@ jobs:
       run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
 
     - name: Build the Docker image
-      run: docker build -t my-first-project.
+      run: docker build -t roopika-19/my-first-project:latest
 
     - name: Push to Docker Hub
       run: docker push roopika-19/my-first-project:latest
