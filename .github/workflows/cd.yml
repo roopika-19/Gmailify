@@ -13,7 +13,7 @@ jobs:
     steps:
     -
         name: Pull Docker Image
-        run: sudo docker pull roopika-19/my-first-project:latest
+        run: sudo docker pull rupzz/my-first-project
     -
         name: Delete Old Docker Container
         run: sudo docker rm -f rupzz/my-first-project|| true
