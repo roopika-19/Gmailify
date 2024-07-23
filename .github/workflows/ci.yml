@@ -19,7 +19,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD}}
       -
         name: Build docker image
-        run: docker build -t roopika-19/my-first-project:latest .
+        run: docker build -t rupzz/my-first-project:latest .
       -
         name: Push to dockerhub
-        run: docker push roopika-19/my-first-project:latest
+        run: docker push rupzz/my-first-project:latest
